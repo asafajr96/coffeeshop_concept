@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/about.css" %}">
+    <title>Vintage Aroma - About Us</title>
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <a href=#><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
+    </div>
+
+    <div class="nav-title">
+        <a href=#>Vintage Aroma</a>
+    </div>
+
+    <div class="top-bg">
+        <img src="{% static "images/strain.jpg" %}" alt="Coffee Strainer" >
+    </div>
+
+    <div class="page-heading">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="content">
+        <div class="block-1">
+            <h2>OUR STORY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, necessitatibus fuga laboriosam ipsa at tenetur illo eos nobis eius molestias blanditiis id nemo. Expedita accusamus dolorem ad hic itaque est praesentium accusantium laudantium fugit eos dolor, obcaecati explicabo, eaque aliquid quo nobis porro totam ut sunt atque pariatur eius. Delectus.</p>
+        </div>
+
+        <div class="block-2">
+            <img src="{% static "images/cafe.jpg" %}" alt="Cafe"> 
+        </div>
+
+        <div class="block-3">
+            <img src="{% static "images/cup.jpg" %}" alt="Cup"> 
+        </div>
+
+        <div class="block-4">
+            <h2>WE MAKE THE MOST DELICIOUS COFFEE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi reiciendis laboriosam placeat, aperiam eveniet molestias dolor, consectetur eligendi, vitae eaque quam necessitatibus saepe debitis.</p>
+            <button>ORDER</button>
+        </div>
+    </div>
+
+    <div class="btm-img">
+        <img src="{% static "images/milk.jpg" %}" alt="Pouring Milk"> 
+        <img src="{% static "images/filter.jpg" %}" alt="Coffee Filter"> 
+    </div>
+
+    <div class="contact">
+        <div class="location">
+            <h2 class="loc-heading">
+                COME ON IN!
+            </h2>
+            <h3>WEEKDAYS</h3>
+            <p>8AM - 11PM</p>
+            <h3>WEEKENDS</h3>
+            <p>8AM - 12PM</p>
+            <div class="social">
+                <a href=""><img src="{% static "images/facebook.png" %}" alt="facebook"></a> 
+                <a href=""><img src="{% static "images/instagram.png" %}" alt="instagram"></a>
+                <a href=""><img src="{% static "images/twitter.png" %}" alt="twitter"></a>
+            </div>
+        </div>
+
+        <div class="contact-details">
+            <h2 class="con-heading">
+                CONTACT US
+            </h2>
+            <h3>PHONE</h3>
+            <p>+267 77707722</p>
+            <h3>EMAIL</h3>
+            <p>info@vintagearoma.com</p>
+            <h3>ADDRESS</h3>
+            <p>80 Vintage Avenue, Somewhere</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy Copyright Vintage Aroma<p id="tag">Designed & Developed by Asafa Makan'a</p>
+    </div>
+    
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

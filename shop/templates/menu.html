@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/menu.css" %}">
+    <title>Vintage Aroma - Menu</title>
+</head>
+
+<body>
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="active"><a href="#">Menu</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <a href=#><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
+    </div>
+
+    <div class="nav-title">
+        <a href=#>Vintage Aroma</a>
+    </div>
+
+    <div class="top-bg">
+        <img src="{% static "images/menu-bg.jpg" %}" alt="Coffee Menu" >
+    </div>
+
+    <div class="content">
+        <div class="block-1">
+            <h2>MAKE YOUR CHOICE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est autem necessitatibus dolore enim, pariatur nihil commodi quae error ipsa ad nesciunt quis aperiam eligendi qui.</p>
+        </div>
+
+        <div class="menu-heading">
+            <h2>MENU</h2>
+        </div>
+        <div class="menu">
+
+        </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy Copyright Vintage Aroma<p id="tag">Designed & Developed by Asafa Makan'a</p>
+    </div>
+    
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

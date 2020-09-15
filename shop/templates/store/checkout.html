@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/checkout.css" %}">
+    <title>Vintage Aroma - Cart</title>
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li class="active"><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <a href=#><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
+    </div>
+
+    <div class="nav-title">
+        <a href=#>Vintage Aroma</a>
+    </div>
+
+    <div class="shopping-cart">
+        <a href=#><img src="{% static "images/cart.png" %}" alt="Shopping Cart" ></a>
+        <p id="cart-total">0</p>
+    </div>
+
+        <div class="shipping-details">
+
+            <form id="form">
+                <div id="user-info">
+                    <div class="form-field1">
+                        <input required class="form-control" type="text" name="name" placeholder="Name..">
+                    </div>
+                    <div class="form-field1">
+                        <input required class="form-control" type="email" name="email" placeholder="Email..">
+                    </div>
+                </div>
+                
+                <div id="shipping-info">
+                    <hr>
+                    <p>Shipping Information:</p>
+                    <hr>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="address" placeholder="Address..">
+                    </div>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="city" placeholder="City..">
+                    </div>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="state" placeholder="State..">
+                    </div>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="zipcode" placeholder="Zip code..">
+                    </div>
+                </div>
+
+                <hr>
+                <input type="submit" value="Continue">
+
+                <br><br>
+			<div class="box-element hidden" id="payment-info">
+				<small>Paypal Options</small>
+            </div>
+            <br>
+
+            </form>
+
+            <div class="order-summary">
+				<button>&#x2190; Back to Cart</button>
+				<hr>
+				<h3>Order Summary</h3>
+				<hr>
+				<div class="cart-row">
+					<div style="flex:2"><p>Product 1</p></div>
+					<div style="flex:1"><p>$20.00</p></div>
+					<div style="flex:1"><p>x2</p></div>
+                </div>
+                <hr>
+				<h5>Items:   2</h5>
+				<h5>Total:   $4</h5>
+			</div>
+            
+        </div>
+    
+    <div class="footer">
+        &copy Copyright Vintage Aroma<p id="tag">Designed & Developed by Asafa Makan'a</p>
+    </div>
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

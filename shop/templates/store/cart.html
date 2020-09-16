@@ -33,7 +33,7 @@
 
     <div class="shopping-cart">
         <a href=#><img src="{% static "images/cart.png" %}" alt="Shopping Cart" ></a>
-        <p id="cart-total">0</p>
+        <p id="cart-total">{{order.get_cart_items}}</p>
     </div>
 
     <div class="checkout">
@@ -44,8 +44,8 @@
 
             <table class="checkout-total">
                 <tr>
-                    <th><h5>Items:</h5><strong>3</strong></h5></th>
-                    <th><h5>Total:</h5><strong>$42</strong></h5></th>
+                    <th><h5>Items:</h5><strong>{{order.get_cart_items}}</strong></h5></th>
+                    <th><h5>Total:</h5><strong>${{order.get_carttotal|floatformat:2}}</strong></h5></th>
                     <th>
                         <button>Checkout</button>
                     </th>
@@ -61,11 +61,11 @@
                     <th><h5>Quantity:</h5></h5></th>
                     <th class="arrows"></th>
                     <th><h5>Total:</h5></h5></th>
-
-                    <tr>
-                        <td>Product 1</td>
-                        <td>$3</td>
-                        <td>2</td>
+                    {% for item in items %}
+                    <tr id="product-item">
+                        <td>{{item.product.product_name}}</td>
+                        <td>${{item.product.price|floatformat:2}}</td>
+                        <td>{{item.quantity}}</td>
                         <td class="arrows">
                             <div class="quantity">
                             <img class="chg-quantity" src="{% static  'images/arrow-up.png' %}">
@@ -73,9 +73,9 @@
                             <img class="chg-quantity" src="{% static  'images/arrow-down.png' %}">
                         </div>
                         </td>
-                        <td>$6</td>
+                        <td>${{item.get_total|floatformat:2}}</td>
                     </tr>
-
+                    {% endfor %}
                 </table>
                 
             </div>

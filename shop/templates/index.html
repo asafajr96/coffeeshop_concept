@@ -15,19 +15,19 @@
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+            <li><a href="{% url 'about_us_page' %}">About Us</a></li>
+            <li><a href="{% url 'shop_page' %}">Shop</a></li>
+            <li><a href="{% url 'contact_page' %}">Contact</a></li>
         </ul>
     </nav>
 
     <div class="logo">
-        <a href=#><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
+        <a href="{% url 'home_page' %}"><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
     </div>
 
     <div class="nav-title">
-        <a href=#>Vintage Aroma</a>
+        <a href="{% url 'home_page' %}">Vintage Aroma</a>
     </div>
 
     <div class="top-bg">
@@ -44,7 +44,7 @@
             <h2>THE BEST COFFEE IN TOWN</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea iure, deserunt corporis distinctio sunt aliquam?</p>
             <br>
-            <button>What's on offer?</button>
+            <a href="{% url 'shop_page' %}"><button >What's on offer?</button></a>
             <br>
         </div>
         <div class="galleryContainer">
@@ -90,9 +90,9 @@
                 <h3>WEEKENDS</h3>
                 <p>8AM - 12PM</p>
                 <div class="social">
-                    <a href=""><img src="{% static "images/facebook.png" %}" alt="facebook"></a> 
-                    <a href=""><img src="{% static "images/instagram.png" %}" alt="instagram"></a>
-                    <a href=""><img src="{% static "images/twitter.png" %}" alt="twitter"></a>
+                    <a href="http://www.facebook.com" target="_blank"><img src="{% static "images/facebook.png" %}" alt="facebook"></a> 
+                    <a href="http://www.instagram.com" target="_blank"><img src="{% static "images/instagram.png" %}" alt="instagram"></a>
+                    <a href="http://www.twitter.com" target="_blank"><img src="{% static "images/twitter.png" %}" alt="twitter"></a>
                 </div>
             </div>
     

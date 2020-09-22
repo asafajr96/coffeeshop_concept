@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
-
+from django.core.mail import send_mail
 from .models import *
+from .forms import ContactForm
+from django.contrib import messages
 
 
 def index(request):
@@ -12,9 +14,30 @@ def index(request):
 def about_us(request):
     return render(request, "about.html")
 
-
+@csrf_exempt
 def contact(request):
-    return render(request, "contact.html")
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        
+        if form.is_valid():
+            
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+            email = form.cleaned_data['email']
+
+            recipients = ['vminimaldesign@gmail.com']
+
+            send_mail(subject, message, email, recipients, fail_silently=False)
+            
+            messages.success(request, "Email was sent successfully.")
+
+            return redirect("contact_page")
+        
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'contact.html', context)
+
+
 
 @csrf_exempt
 def shop(request):

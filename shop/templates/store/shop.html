@@ -15,23 +15,23 @@
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li class="active"><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'home_page'%}">Home</a></li>
+            <li><a href="{% url 'about_us_page'%}">About Us</a></li>
+            <li class="active"><a href="{% url 'shop_page'%}">Shop</a></li>
+            <li><a href="{% url 'contact_page'%}">Contact</a></li>
         </ul>
     </nav>
 
     <div class="logo">
-        <a href=#><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
+        <a href="{% url 'home_page'%}"><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
     </div>
 
     <div class="nav-title">
-        <a href=#>Vintage Aroma</a>
+        <a href="{% url 'home_page'%}">Vintage Aroma</a>
     </div>
 
     <div class="shopping-cart">
-        <a href=#><img src="{% static "images/cart.png" %}" alt="Shopping Cart" ></a>
+        <a href="{% url 'cart_page'%}"><img src="{% static "images/cart.png" %}" alt="Shopping Cart" ></a>
         <p id="cart-total">0</p>
     </div>
 
@@ -59,10 +59,10 @@
                         <p name = "pdescription" >{{product.description}}</p>
                         <h3 name = "pprice" >Price: ${{product.price}}</h3>
                         <div class="cell-bottom-row">
-                            <form action="update_note/{{note.id}}/" method="POST">
-                                <button type="submit" id="save-btn">Add To Cart</button>
+                            <form>
+                                <button class="update-cart" data-product="{{product.id}}" data-action="add">Add To Cart</button>
                             </form>
-                            <form action="delete_note/{{note.id}}/" method="POST">
+                            <form>
                                 <button type="submit" id="delete-btn">View</button>
                             </form>
                         </div>
@@ -81,9 +81,9 @@
             <h3>WEEKENDS</h3>
             <p>8AM - 12PM</p>
             <div class="social">
-                <a href=""><img src="{% static "images/facebook.png" %}" alt="facebook"></a> 
-                <a href=""><img src="{% static "images/instagram.png" %}" alt="instagram"></a>
-                <a href=""><img src="{% static "images/twitter.png" %}" alt="twitter"></a>
+                <a href="http://www.facebook.com" target="_blank"><img src="{% static "images/facebook.png" %}" alt="facebook"></a> 
+                <a href="http://www.instagram.com" target="_blank"><img src="{% static "images/instagram.png" %}" alt="instagram"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="{% static "images/twitter.png" %}" alt="twitter"></a>
             </div>
         </div>
 
@@ -105,5 +105,6 @@
     </div>
 
     <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/cart.js' %}"></script>
 </body>
 </html>

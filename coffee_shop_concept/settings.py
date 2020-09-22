@@ -129,3 +129,10 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn" )
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media_cdn" )
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'vminimaldesign@gmail.com'
+EMAIL_HOST_PASSWORD ='ashasafa96'
+EMAIL_USE_TLS = True

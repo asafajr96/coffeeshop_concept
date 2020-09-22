@@ -285,13 +285,61 @@ nav {
     margin-right: 0.5em;
 }
 
+.form-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 1em 1em;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+input[type="text"], input[type="email"], textarea{
+    background-color: #ffffff;
+    margin-bottom: 1em;
+    margin-top: 3px;
+    padding: 8px 12px;
+    border: 1px solid #2F1E0A;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+textarea{
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.form-container label{
+    margin-top: 1em;
+    padding-bottom: 5px;
+}
+
+input[type="submit"]{
+    padding: 8px 12px;
+    width: 45%;
+    border-radius: 16px;
+    max-width: 45%;
+    background-color: white;
+    color: #2F1E0A;
+    border: 1px solid #2F1E0A;
+}
+
+input[type="submit"]:hover{
+    background-color: #2F1E0A;
+    color: white;
+}
 
 @media screen and (min-width: 769px){
 
-    #cart-total{
-        top: 2.8rem;
-        margin-left: 5%;
+    .form-container{
+        width: 60%;
     }
+
 
     .column{
         float: left;
@@ -327,6 +375,11 @@ nav {
 
 
 @media screen and (min-width: 900px){
+
+    .form-container{
+        width: 60%;
+    }
+
     .block-1 p{
         width: 65%;
     }
@@ -357,6 +410,10 @@ nav {
 }
 
 @media screen and (min-width: 1024px){
+
+    .form-container{
+        width: 40%;
+    }
 
     .shopping-cart{
         margin-left: 1%;

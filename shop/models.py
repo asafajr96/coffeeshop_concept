@@ -2,6 +2,14 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+class Contact(models.Model):
+    subject = models.CharField(max_length=255)
+    email = models.EmailField(max_length=200)
+    message = models.EmailField(max_length=1000)
+    def __str__(self):
+        return self.email
+
+
 class Product(models.Model):
     product_name = models.CharField(max_length=100)
     description = models.CharField(max_length=1000)

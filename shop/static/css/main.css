@@ -215,11 +215,13 @@ nav {
     background-color: #6d4c27;
     border: none;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .cell-bottom-row button:hover{
     background-color: #2F1E0A;
     color: white;
+    cursor: pointer;
 }
 
 .block-1{

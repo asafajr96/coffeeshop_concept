@@ -5,10 +5,115 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{% static "css/home.css" %}">
-
     <title>Vintage Aroma - Home</title>
 </head>
 <body>
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-</body>
-</html>
+    <div class="logo">
+        <a href=#><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
+    </div>
+
+    <div class="nav-title">
+        <a href=#>Vintage Aroma</a>
+    </div>
+
+    <div class="top-bg">
+        <img src="{% static "images/home-bg.jpg" %}" alt="Coffee Strainer" >
+    </div>
+
+    <div class="page-heading">
+        <h1>Vintage Aroma</h1>
+    </div>
+
+    <div class="main-content">
+        <div class="block-1">
+            <br>
+            <h2>THE BEST COFFEE IN TOWN</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea iure, deserunt corporis distinctio sunt aliquam?</p>
+            <br>
+            <button>What's on offer?</button>
+            <br>
+        </div>
+        <div class="galleryContainer">
+            <div class="slideShowContainer">
+                <div id="playPause" onclick="playPauseSlides()"></div>
+                <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+                <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+                <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+                <div class="imageHolder">
+                    <img src="{% static "images/slideshow/1.jpg" %}">1366X768
+                    <p class="captionText">Caption Text-01</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="{% static "images/slideshow/2.jpg" %}">
+                    <p class="captionText">Caption Text-02</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="{% static "images/slideshow/3.jpg" %}">
+                    <p class="captionText">Caption Text-03</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="{% static "images/slideshow/4.jpg" %}">
+                    <p class="captionText">Caption Text-04</p>
+                </div>
+            </div>
+            <div id="dotsContainer"></div>
+        </div>
+
+        <div class="block-1">
+            <h2>SHARE A COFFEE WITH A FRIEND</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea iure, deserunt corporis distinctio sunt aliquam?</p>
+            <br>
+        </div>
+    </div>
+
+        <div class="contact">
+            <div class="location">
+                <h2 class="loc-heading">
+                    COME ON IN!
+                </h2>
+                <h3>WEEKDAYS</h3>
+                <p>8AM - 11PM</p>
+                <h3>WEEKENDS</h3>
+                <p>8AM - 12PM</p>
+                <div class="social">
+                    <a href=""><img src="{% static "images/facebook.png" %}" alt="facebook"></a> 
+                    <a href=""><img src="{% static "images/instagram.png" %}" alt="instagram"></a>
+                    <a href=""><img src="{% static "images/twitter.png" %}" alt="twitter"></a>
+                </div>
+            </div>
+    
+            <div class="contact-details">
+                <h2 class="con-heading">
+                    CONTACT US
+                </h2>
+                <h3>PHONE</h3>
+                <p>+267 77707722</p>
+                <h3>EMAIL</h3>
+                <p>info@vintagearoma.com</p>
+                <h3>ADDRESS</h3>
+                <p>80 Vintage Avenue, Somewhere</p>
+            </div>
+        </div>
+    
+        <div class="footer">
+            &copy Copyright Vintage Aroma<p id="tag">Designed & Developed by Asafa Makan'a</p>
+        </div>
+        
+        <script src="{% static 'js/app.js' %}"></script>
+        <script src="{% static 'js/myScript.js' %}"></script>
+    </body>
+    </html>

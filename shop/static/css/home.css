@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #2F1E0A;
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    top: 0;
+    z-index: 999; 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.nav-links{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+.active a{
+    border-bottom: 2px solid #D9B58A;
+    text-decoration: none;
+    color:rgb(226, 226, 226);
+
+}
+
+.nav-links a{
+    color:#D9B58A;
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 1vh;
+}
+
+.nav-links a:hover{
+    border-bottom: 2px solid rgb(226, 226, 226);
+    color:rgb(226, 226, 226);
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.logo img{
+    background-color: #2F1E0A;
+    width: 20px;
+    padding: 13px;
+    margin-top: -2rem;
+    position: fixed;
+    top: 2.3rem;
+    display: block;
+    margin-left: 1.5%;
+    margin-right: 55%;
+    z-index: 100000;
+}
+
+.nav-title a{
+    margin-top: -2rem;
+    position: fixed;
+    top: 3rem;
+    display: block;
+    margin-left: 7%;
+    margin-right: 55%;
+    z-index: 100000;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+
+.top-bg img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+.page-heading h1{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 24%;
+    color: #2F1E0A ;
+    letter-spacing: 6px;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main-content{
+    width: 100%;
+    margin-top: -0.5em;
+}
+
+
+.block-1{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.block-1 p{
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    color: #2F1E0A;
+}
+
+.block-1 h2{
+    color: #2F1E0A;
+}
+
+.block-1 button{
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #2F1E0A;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.block-1 button:hover{
+    background-color: #2F1E0A;
+    color: white;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #af8f6b;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.location{
+    width: 100%;
+    color: #2F1E0A;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-items: center; 
+    margin-bottom: 2em;
+}
+
+.location img{
+    width: 4%;
+    justify-content: space-around;
+    margin-right: 0.5em;
+}
+
+.contact-details{
+    width: 100%;
+    color: #2F1E0A;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.contact h3{
+    color: rgb(226, 226, 226);
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+#tag{
+    margin: 0 auto;
+}
+
+
+.galleryContainer{
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.galleryContainer .slideShowContainer{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+}
+.galleryContainer .slideShowContainer #playPause{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url(images/playPause.png);
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+}
+.galleryContainer .slideShowContainer #playPause:hover{
+    opacity: .7;
+}
+.galleryContainer .slideShowContainer .imageHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageHolder img{
+    width: 100%;
+    height: 100%;
+}
+.galleryContainer .slideShowContainer .imageHolder .captionText{
+    display: none;
+}
+
+.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.galleryContainer .slideShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+    background: #000000a8;
+    cursor: pointer;
+}
+.galleryContainer .arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.galleryContainer .arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+}
+.galleryContainer .arrow.arrowRight{
+    transform: rotateZ(45deg);
+}
+
+
+.galleryContainer .slideShowContainer>.captionTextHolder{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+    margin: 0;
+}
+
+.galleryContainer #dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.galleryContainer #dotsContainer .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition:background-color 0.5s;
+}
+.galleryContainer #dotsContainer .dots:first-child{
+    margin-left: 0;
+}
+.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+    background-color: #717171;;
+}
+
+.galleryContainer .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+.galleryContainer .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
+.galleryContainer .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+.galleryContainer .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
+.slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+    from {opacity: 0;margin-top: 100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+
+.slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideTextFromTop {
+    from {opacity: 0;margin-top: -100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+
+
+@media screen and (min-width: 650px){
+    .galleryContainer{
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .page-heading h1{
+        font-size: 50px;
+        top: 35%;
+    }
+
+    .footer{
+        font-size: 15px;
+        padding-left: 9em;  
+    }
+
+    .block-1 p{
+        width: 90%;
+    }
+
+    .contact{
+        flex-direction: row;
+    }
+
+    .location{
+        width: 50%;
+        float: left;
+    }
+
+    .contact-details{
+        width: 50%;
+        float: left;
+    }
+
+    .galleryContainer{
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .block-1 p{
+        width: 65%;
+    }
+
+    .footer{
+        padding-left: 10em;
+    }
+
+    .galleryContainer{
+        height: 650px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .page-heading h1{
+        font-size: 70px;
+        top: 55%;
+    }
+
+    .block-1 p{
+        width: 60%;
+    }
+
+    .block-1 h2 {
+        margin-top: 2em;
+    }
+
+    .footer{
+        padding-left: 15em;
+    }
+
+    .galleryContainer{
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .line{
+        width: 30px;
+        background-color: #D9B58A;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+
+    .nav-links{
+        position: fixed;
+        margin-top: 2.5em;
+        background-color: #2F1E0A;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 30%;
+        display: block;
+    }
+
+    .logo img{
+        width: 20px;
+        top: 2.3rem;
+    }
+
+    .nav-title a{
+        margin-left: 10%;
+        width: 200px;
+    }
+
+    .title h1 {
+        top: 25%; /* Adjust this value to move the positioned div up and down */
+
+        width: 60%; /* Set the width of the positioned div */
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}

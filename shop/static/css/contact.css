@@ -54,6 +54,25 @@ nav {
     list-style: none;
 }
 
+.top-bg img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.page-heading h1{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 26%;
+    color: #2F1E0A;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .logo img{
     background-color: #2F1E0A;
     width: 20px;
@@ -129,91 +148,143 @@ nav {
     margin: 0 auto;
 }
 
-.shipping-details{
-    background-color:#e7d0b6;
-    margin-top: 3.4em;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2em;
-    width: 100%;
+
+.products{
+    background-color: white;
+    padding: 2em;
+    height: 100%;
 }
 
-form {
-    background-color: white;
+.column{
     padding: 1em;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    width: 80%;
-    margin: auto;
-    margin-top: 5em;
-    font-family: 'Raleway', sans-serif;
-}
-
-#user-info{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-field input{
-    padding: 8px 12px;
-    width: 90%;
-    border: 1px solid #2F1E0A;
-    margin-bottom: 1em;
-    font-family: 'Raleway', sans-serif;
-
-}
-
-input[type=submit]{
-    padding: 8px 12px;
-    width: 97%;
-    font-family: 'Raleway', sans-serif;
-    background-color: #1eb125;
-    color: white;
-    border: none;
-}
-
-input[type=submit]:hover{
-    background-color: #18701c;
-}
-
-.form-field1 input{
-    padding: 8px 12px;
-    width: 90%;
-    margin-bottom: 1em;
-    border: 1px solid #2F1E0A;
-    font-family: 'Raleway', sans-serif;
-}
-
-.order-summary{
     background-color: white;
-    padding: 1em;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    width: 80%;
-    margin: auto;
-    margin-top: 2em;
-    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    margin-bottom: 0em;
 }
 
-.order-summary button{
-    background-color: white;
+.product-container{
+    border-radius: 5px;
+    background-color: #D9B58A;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin: 0 auto;
+    padding-bottom: 0em;
+    margin-top: 0em;
+    width: 90%;
+}
+
+.product-container h3{
     color: #2F1E0A;
-    padding: 8px 12px;
-    border: 1px solid #2F1E0A;
-    border-radius: 16px;
 }
 
-.order-summary button:hover{
+.product-container p{
+    color: #2F1E0A;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.product-container img{
+    width: 50%;
+    height: 35%;
+}
+
+.content{
+    background-color: white;
+    margin-top: 0em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.cell-bottom-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cell-bottom-row form{
+    width: 50%;
+}
+
+.cell-bottom-row button{
+    width: 100%;
+    padding: 12px 12px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background-color: #6d4c27;
+    border: none;
+    font-size: 15px;
+}
+
+.cell-bottom-row button:hover{
     background-color: #2F1E0A;
     color: white;
 }
 
-.cart-row{
-    display: flex;
+.block-1{
+    text-align: center;
+    align-self: center;
+    width: 100%;
 }
 
-.order-summary h5{
-    font-size: 16px;
+.block-1 p {
+    width: 70%;
+    margin: 0 auto;
 }
+
+.contact-details{
+    width: 100%;
+    color: #2F1E0A;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.contact h3{
+    color: rgb(226, 226, 226);
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+#tag{
+    margin: 0 auto;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #af8f6b;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+.location{
+    width: 100%;
+    color: #2F1E0A;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-items: center; 
+    margin-bottom: 2em;
+}
+
+.location img{
+    width: 4%;
+    justify-content: space-around;
+    margin-right: 0.5em;
+}
+
 
 @media screen and (min-width: 769px){
 
@@ -222,38 +293,66 @@ input[type=submit]:hover{
         margin-left: 5%;
     }
 
+    .column{
+        float: left;
+        width: 45%;
+        height: 500px;
+    }
+
+    .contact{
+        flex-direction: row;
+    }
+
+    .location{
+        width: 50%;
+        float: left;
+    }
+
+    .contact-details{
+        width: 50%;
+        float: left;
+    }
+
     .footer{
         font-size: 15px;
         padding-left: 9em;  
     }
 
-    .shipping-details{
-        flex-direction: row;
+    .page-heading h1{
+        font-size: 50px;
+        top: 35%;
     }
 
-    form{
-        width: 41%;
-        float: left;
-        margin-left: 2%;
-    }
-
-    .order-summary{
-        width: 41%;
-        margin-left: 2%;
-        margin-top: 5em;
-    }
 }
 
 
 @media screen and (min-width: 900px){
-   
+    .block-1 p{
+        width: 65%;
+    }
+
+    .block-4 p{
+        width: 50%;
+    }
+
     #cart-total{
         top: 2.8rem;
         margin-left: 4.2%;
     }
 
+    .column{
+        float: left;
+        width: 29%;
+        height: 470px;
+    }
+    
     .footer{
         padding-left: 10em;
+    }
+
+    .page-heading h1{
+        font-size: 70px;
+        top: 40%;
     }
 }
 
@@ -267,21 +366,53 @@ input[type=submit]:hover{
         padding-left: 15em;
     }
 
+    .page-heading h1{
+        font-size: 70px;
+        top: 55%;
+    }
+
+    .block-1 p{
+        width: 60%;
+    }
+
+    .block-4 p{
+        width: 40%;
+        margin-bottom: 2em;
+    }
+
+    .block-4 h2{
+        margin-top: 5em;
+    }
+
+    .block-1 h2 {
+        margin-top: 2em;
+    }
+
     #cart-total{
         top: 2.8rem;
         margin-left: 2.7%;
     }
 
-    form{
-        width: 40%;
-        float: left;
-        margin-left: 5%;
+    .cell-bottom-row button{
+        font-size: 12px;
     }
 
-    .order-summary{
-        width: 40%;
-        margin-left: 1%;
-        margin-top: 5em;
+    .column{
+        float: left;
+        width: 21%;
+        height: 470px;
+    }
+
+    .products{
+        padding-left: 4em;
+    }
+
+    .product-container{
+        width: 98%;
+    }
+
+    .products{
+        padding-right: 0em;
     }
 }
 
@@ -293,6 +424,7 @@ input[type=submit]:hover{
         height: 3px;
         margin-bottom: 5px;
     }
+
 
     .nav-links{
         position: fixed;

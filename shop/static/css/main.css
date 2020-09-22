@@ -54,6 +54,25 @@ nav {
     list-style: none;
 }
 
+.top-bg img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.page-heading h1{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 26%;
+    color: #2F1E0A;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .logo img{
     background-color: #2F1E0A;
     width: 20px;
@@ -171,7 +190,7 @@ nav {
 
 .content{
     background-color: white;
-    margin-top: 3.4em;
+    margin-top: 0em;
     padding-top: 1em;
     padding-left: 1em;
     padding-left: 1em;
@@ -299,6 +318,10 @@ nav {
         padding-left: 9em;  
     }
 
+    .page-heading h1{
+        font-size: 50px;
+        top: 35%;
+    }
 }
 
 
@@ -324,6 +347,11 @@ nav {
     
     .footer{
         padding-left: 10em;
+    }
+
+    .page-heading h1{
+        font-size: 70px;
+        top: 40%;
     }
 }
 
@@ -361,7 +389,7 @@ nav {
 
     #cart-total{
         top: 2.8rem;
-        margin-left: 3%;
+        margin-left: 2.7%;
     }
 
     .cell-bottom-row button{
@@ -395,6 +423,7 @@ nav {
         height: 3px;
         margin-bottom: 5px;
     }
+
 
     .nav-links{
         position: fixed;

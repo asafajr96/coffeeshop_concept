@@ -84,6 +84,7 @@ nav {
 
 .top-bg img{
     width: 100%;
+    opacity: 0.6;
 }
 
 .page-heading h1{
@@ -92,7 +93,7 @@ nav {
     left: 0;
     right: 0;
     top: 26%;
-    color: rgb(226, 226, 226);
+    color: #2F1E0A;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 38px;
@@ -190,12 +191,10 @@ nav {
     width: 30%;
     border: 1px solid #2F1E0A;
     border-radius: 25px;
-    padding-bottom: 2vh;
-    padding-top: 2vh;
+    padding: 8px 12px;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
-    text-transform: uppercase;
     margin-bottom: 2em;
     cursor: pointer;
 }
@@ -293,6 +292,7 @@ nav {
     .block-2{
         float: left;
         width:50%;
+        margin-top: 4px;
     }
 
     .block-3{
@@ -346,6 +346,10 @@ nav {
         width: 50%;
     }
 
+    .block-2{
+        margin-top: 4px;
+    }
+
     .footer{
         padding-left: 10em;
     }
@@ -372,6 +376,10 @@ nav {
 
     .block-1 h2 {
         margin-top: 2em;
+    }
+    
+    .block-2{
+        margin-top: 4px;
     }
 
     .footer{

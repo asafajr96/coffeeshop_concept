@@ -15,30 +15,30 @@
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li class="active"><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'home_page'%}">Home</a></li>
+            <li><a href="{% url 'about_us_page'%}">About Us</a></li>
+            <li class="active"><a href="{% url 'shop_page'%}">Shop</a></li>
+            <li><a href="{% url 'contact_page'%}">Contact</a></li>
         </ul>
     </nav>
 
     <div class="logo">
-        <a href=#><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
+        <a href="{% url 'home_page'%}"><img src="{% static "images/coffee_beans.png" %}" alt="Coffee Beans" ></a>
     </div>
 
     <div class="nav-title">
-        <a href=#>Vintage Aroma</a>
+        <a href="{% url 'home_page'%}">Vintage Aroma</a>
     </div>
 
     <div class="shopping-cart">
-        <a href=#><img src="{% static "images/cart.png" %}" alt="Shopping Cart" ></a>
+        <a href="{% url 'cart_page'%}"><img src="{% static "images/cart.png" %}" alt="Shopping Cart" ></a>
         <p id="cart-total">{{order.get_cart_items}}</p>
     </div>
 
     <div class="checkout">
         <div class="checkout-heading">
             <div class="top-box">
-                <button>&#x2190; Continue Shopping</button>
+                <a href="{% url 'shop_page'%}"><button>&#x2190; Continue Shopping</button></a>
             </div>
 
             <table class="checkout-total">
@@ -46,7 +46,7 @@
                     <th><h5>Items:</h5><strong>{{order.get_cart_items}}</strong></h5></th>
                     <th><h5>Total:</h5><strong>${{order.get_carttotal|floatformat:2}}</strong></h5></th>
                     <th>
-                        <button>Checkout</button>
+                        <a href="{% url 'checkout_page'%}" ><button>Checkout</button></a>
                     </th>
                 </tr>
             </table>

@@ -226,11 +226,13 @@ nav {
     text-align: center;
     align-self: center;
     width: 100%;
+    color: #2F1E0A;
 }
 
 .block-1 p {
     width: 70%;
     margin: 0 auto;
+    color: #2F1E0A;
 }
 
 .contact-details{
@@ -297,6 +299,7 @@ form{
     display: flex;
     flex-direction: column;
     border: none;
+    font-family: 'Raleway', sans-serif;
 }
 
 input[type="text"], input[type="email"], textarea{
@@ -307,16 +310,21 @@ input[type="text"], input[type="email"], textarea{
     border: 1px solid #2F1E0A;
     min-width: 100%;
     max-width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 textarea{
     max-height: 200px;
     min-height: 200px;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .form-container label{
     margin-top: 1em;
     padding-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    color: #2F1E0A;
 }
 
 input[type="submit"]{
@@ -327,6 +335,8 @@ input[type="submit"]{
     background-color: white;
     color: #2F1E0A;
     border: 1px solid #2F1E0A;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 
 input[type="submit"]:hover{

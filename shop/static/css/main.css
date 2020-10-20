@@ -228,11 +228,13 @@ nav {
     text-align: center;
     align-self: center;
     width: 100%;
+    color: #2F1E0A
 }
 
 .block-1 p {
     width: 70%;
     margin: 0 auto;
+    color: #2F1E0A;
 }
 
 .contact-details{
